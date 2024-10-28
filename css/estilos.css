@@ -1,0 +1,472 @@
+		*{
+	padding: 0px;
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+
+
+body{
+	font-family: sans-serif;
+	margin: 0;
+	background-image: url(../imagenes/fondofinal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	max-width: 1300px;
+
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
+header{
+	display: flex;
+	justify-content: space-between;
+	min-height: 100px;
+
+	background-color: #ffcdd8;
+	align-items: center;
+	padding: 10px;
+	position: sticky;
+	top: 0;
+	border-bottom: solid 1px #fff;
+	border-radius: 15%;
+	border-top-left-radius: 0% ;
+	border-top-right-radius: 0%;
+
+}
+.logo{
+	display: flex;
+	align-items: center;
+}
+.logo img{
+	height: 50px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+a span{
+	color: darkred;
+}
+
+h1{
+	text-align: center;
+	margin-top: 1.5em;
+	margin-bottom: 1.5rem;
+}
+
+.subtitulos{
+
+	margin-top: 1.5em;
+	margin-bottom: 1.5rem;
+}
+
+
+
+nav a{
+	font-weight: 600;
+	padding-right: 10px;
+}
+
+
+.encabezado{
+	list-style: none;
+	display: flex;
+	justify-content: right;
+
+
+}
+
+
+
+.encabezado > li > a{
+	display: block;
+	padding: 20px 20px;
+	color: black;
+	text-decoration: none;
+
+	
+
+}
+
+.encabezado li:hover{
+	background-color: #f1666d;
+	border-radius: 10px;
+
+
+}
+.encabezado-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: #f1666d;
+}
+
+.encabezado li:hover .encabezado-vertical{
+	display: block;
+	border-radius: 10px;
+
+}
+.encabezado-vertical li:hover{
+	background-color: #dc143c;
+}
+
+.encabezado-vertical li a{
+	display: block;
+	color: black;
+	padding: 15px 15px 15px 20px;
+
+
+
+}
+
+.portadaimg{
+ width: 400px;
+ border-radius: 10px;
+ margin-left: 30px;
+ margin-bottom: 10px;
+  }
+
+.principal{ 
+	margin-bottom: 10%;
+	margin-top: 5%;
+	padding-right: 12%;
+	padding-left: 12%;
+}
+
+.secundario{
+ 	margin-bottom: 10%;
+	margin-top: 5%;
+	padding-right: 12%;
+	padding-left: 12%;
+
+}
+
+.tercero{ 
+	margin-bottom: 10%;
+	margin-top: 5%;
+	padding-right: 12%;
+	padding-left: 12%;
+ }
+
+.icon{ display: none;}
+
+
+.pie-pagina{
+	display: flex;
+	background-color: #ffcdd8;
+	border-bottom: solid 1px #fff;
+	border-radius: 15%;
+	border-bottom-left-radius: 0% ;
+	border-bottom-right-radius: 0%;
+	padding-left: 315px;
+
+}
+
+.red{
+	width: 35px;
+	margin: 30px;
+	
+	max-width: 2.5rem;
+	margin-right: 1.5rem;
+	
+
+
+}
+article{
+	background-color: #fff0f3;
+
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 15px;
+	padding: 15px 0px 15px 0px;
+	margin-bottom: 10%;
+	margin-top: 5%;
+}
+.libro{
+	width: 180px;
+	border-radius: 10px;
+}
+
+.musica{
+	width: 200px;
+	border-radius: 10px;
+}
+
+.autor{
+	width: 350px;
+	padding-left: 100px;
+}
+
+
+.biografia{
+	width: 200px;
+	border-radius: 10px;
+	margin-left: 120px;
+}
+
+
+
+
+
+.secundario div {
+	display: flex;
+
+}
+.secundario div p{
+	padding-left: 10px;
+}
+
+.tercero div .primera-temp {
+	display: flex;
+}
+
+.tercero div .primera-temp img{
+	width: 400px;
+	height: 150px;
+	border-radius: 10px;
+	
+}
+.tercero div .segunda-temp img{
+	border-radius: 10px;
+}
+
+h3{
+	padding-top: 5px;
+	margin-bottom: 1rem;
+}
+
+.tercero div p{
+	padding-right: 30px;
+}
+
+.img-personaje{
+	width: 400px;
+	border-radius: 10px;
+	margin-left: 40px;
+ 
+
+}
+article div a img{
+	width: 300px;
+	height: 200px;
+	display: inline-flex;
+	margin-left: 30px;
+	padding: 10px;
+	
+	align-content: space-around;
+	border-radius: 15px;
+
+}
+
+.form{
+	width:100%;
+	height:440px;
+	background:#e6e6e6;
+	border-radius:8px;
+	box-shadow:0 0 40px -10px #000;
+	margin:calc(1vh) auto;
+	padding:10px 30px;
+	box-sizing:border-box;
+	font-family:'Montserrat',sans-serif;
+	font-size: 14px;
+
+	
+}
+
+h3.contacto{
+	margin:10px 0;
+	padding-bottom:10px;
+	width:150px;
+	color:#78788c;
+	border-bottom:3px solid #78788c;
+	font-size: large;
+}
+
+input{
+	width:100%;
+	margin-top: 30px;
+	padding:10px;
+	box-sizing:border-box;
+	background:none;
+	outline:none;
+	resize:none;
+	border:0;
+	transition:all .3s;
+	border-bottom:2px solid #bebed2
+}
+
+input:focus{
+	border-bottom:2px solid #78788c
+}
+
+button{
+	padding:8px 12px;
+	margin:50px 0 0;
+	border:2px solid #78788c;
+	background:0;color:#5a5a6e;
+	cursor:pointer;
+	transition:all .3s;
+}
+
+button:hover{
+	background:#78788c;
+	color:#fff;
+}
+
+div.pie_contacto{
+	position: relative;
+	bottom:-15px;
+	right:30%;
+	background:#50505a;
+	color:#fff;
+	width:420px;
+	padding:16px 4px 16px 0;
+	border-radius:6px;
+	box-shadow:10px 10px 40px -14px #000;
+	margin-left: 115px;
+}
+
+div.pie_contacto span{
+	margin:0 5px 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) { 
+header{
+
+	display: flex;
+	justify-content: space-around;
+	min-height: 100px;
+	background-color: #ffcdd8;
+	align-items: center;
+	padding: 10px;
+	position: sticky;
+	top: 0;
+	border-bottom: solid 1px #fff;
+	border-radius: 15%;
+	border-top-left-radius: 0% ;
+	border-top-right-radius: 0%;
+	z-index: 1;
+	flex-wrap: wrap;
+
+}
+header div, header a {
+	flex: 1 0 50%;
+}
+header nav {
+	flex-basis: 100%;
+}
+.icon {
+	display: block;
+	padding-right: 0.6rem;
+	text-align: right;
+}
+
+nav ul {
+	display: none;
+}
+nav.responsive ul {
+	display: block;
+}
+nav.responsive ul li {
+	display: block;
+	text-align: center;
+	padding: 0.5rem;
+}
+nav.responsive ul li a {
+	padding-right: 0;
+}
+
+
+.encabezado{
+	display: none;
+}
+
+.icon:hidden .encabezado-vertical{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+	max-width: 480px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.principal{
+	height: 250px;
+	padding: 10%;
+}
+.secundario{
+	margin-top: 1%;
+	display: block;
+}
+.secundario div{
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+}
+.secundario div a img{
+	margin-bottom: 1rem;
+}
+h2{
+	font-size: 1rem;
+}
+h4{
+	font-size: 1rem;
+}
+footer{
+	height: 80px;
+	justify-content: space-evenly;
+}
+footer img{
+	max-width: 3rem;
+}
+}
