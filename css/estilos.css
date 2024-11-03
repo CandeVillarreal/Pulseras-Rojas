@@ -17,6 +17,9 @@ body{
 	background-size: cover;
 	background-attachment: fixed;
 	max-width: 1300px;
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
 
 }
 
@@ -104,7 +107,7 @@ nav a{
  height: 400px;
  border-radius: 10px;
  margin-bottom: 10px;
-  }
+ }
 
 
 
@@ -168,8 +171,7 @@ footer{
 
 
 article{
-	background-color: #fff0f3;
-
+	background-color: #fff;
 	margin-left: 100px;
 	margin-right: 100px;
 	border-radius: 15px;
@@ -179,11 +181,20 @@ article{
 }
 
 
-
-.libro{
-	width: 180px;
+.libro{ /*Para el article de informacion de la serie*/
+	width: 200px;
+	height: 185px;
 	border-radius: 10px;
+	margin-right: 20px;
 }
+
+.efecto-libro{
+	width: 165px;
+	height: 210px;
+	float: left;
+}
+
+
 
 
 
@@ -194,9 +205,25 @@ article{
 }
 
 .musica{
-	width: 150px;
+	width: 200px;
+	height: 215px;
 	border-radius: 10px;
+
 }
+
+
+.efecto-musica{
+	
+	width: 240px;
+	height: 300px;
+	float: left;
+
+}
+
+
+
+
+
 
 .autor{
 	width: 150px;
@@ -219,6 +246,7 @@ article{
 
 .blanco{
 	color: white;
+	
 }
 .secundario div {
 	display: flex;
@@ -234,28 +262,34 @@ article{
 	height: 150px;
 	border-radius: 10px;
 	margin-bottom: 10px;
+	margin-left: 10px;
 }
 
 .tercero div .segunda-temp img{
 	border-radius: 10px;
 	margin-bottom: 15px;
+	margin-left: 50px;
 }
 
 
 .tercero div p{
-	padding-right: 30px;
+	padding-right: 10px;
 }
 
 
 article div a img{ /* imagenes de galeria */
-	width: 300px;
-	height: 200px;
+	width: 220px;
+	height: 150px;
 	display: inline-flex;
 	margin-left: 30px;
 	padding: 10px;
 	
 	align-content: space-around;
 	border-radius: 15px;
+
+    
+    	grid-template-columns: repeat(3, 1fr);
+
 
 }
 
@@ -389,8 +423,9 @@ div .espacio{
 
 
 
-
-
+.texto{
+	text-overflow: none;
+}
 
 
 
@@ -400,8 +435,8 @@ div .espacio{
 
 @media (max-width: 480px) {
 body {
-    max-width: 100%; /* Asegurar que el body ocupe el ancho completo */
-    padding: 0; /* Eliminar cualquier padding */
+    max-width: 100%; 
+    padding: 0; 
 }
 
 header{
@@ -448,39 +483,40 @@ nav.responsive ul li a {
 
 
 .logo img {
-        height: 40px; /* Ajustar el tamaño del logo */
+        height: 40px; 
 }
 
 h1 {
-        font-size: 28px; /* Reducir el tamaño de la fuente */
+        font-size: 28px; 
 }
 
-.encabezado {
-        justify-content: center; /* Centrar los elementos de navegación */
+h3{
+	margin-bottom: 10px;
+	margin-top: 30px;
 }
 
-.encabezado > li > a {
-        padding: 15px; /* Ajustar el padding para pantallas más pequeñas */
-}
+
 
 article {
-        margin-left: 10px; /* Reducir márgenes */
+        margin-left: 10px; 
         margin-right: 10px;
 }
 
 .portadaimg {
-        width: 100%; /* Imágenes a ancho completo */
-        height: auto; /* Mantener la relación de aspecto */
+        width: 100%; 
+        height: auto; 
 }
 
-.biografia {
-        width: 100%; /* Ancho completo para biografía */
-        margin-left: 0; /* Eliminar margen izquierdo */
-}
 
+
+
+
+/*                              FORMULARIO CONTACTO                         */
 .form {
-        height: auto; /* Permitir que el formulario ajuste su altura */
-        padding: 10px; /* Ajustar padding */
+	width: 370px;
+        height: 500px; 
+        padding: 10px; 
+
 }
 
 input {
@@ -491,23 +527,34 @@ button {
         width: 100%; /* Botón a ancho completo */
 }
 
-.filas {
-        grid-template-columns: 1fr; /* Diseño de una sola columna */
+
+div.pie_contacto{
+
+	margin-left: 70px;
 }
 
+
+
+
+/*                        FIN FORMULARIO CONTACTO                          */
+
+
+
+
 .animacion {
-        width: 100%; /* Hacer animaciones responsivas */
-        height: auto; /* Mantener relación de aspecto */
+        width: 100%; 
+        height: auto; 
 }
 
 .img-personaje {
-        max-width: 230px; /* Ajustar ancho para móviles */
-        margin-right: 30px;
-}
+        max-width: 290px; 
+        margin-left: 45px;
+        }
 
 .filas {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en móviles */
+        grid-template-columns: repeat(2, 1fr); 
         max-width: 350px;
+        margin-left: 30px;
 }
 
 .primera-temp {
@@ -528,29 +575,151 @@ button {
 
 
 
-.tercero div .primera-temp {
-	
+.tercero div .primera-temp {	
 	flex-wrap: wrap-reverse;
+}
+
+.libro{
+	max-width: 150px;
+	border-radius: 10px;
+}
+
+.texto{
+	
+	text-overflow: hidden;
+	max-width: 250px;
+}
+
+.blanco{
+	display: none;
+}
+
+
+.tercero div .primera-temp img{
+	width: 400px;
+	height: 200px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+.tercero div .segunda-temp img{
+	border-radius: 10px;
+	margin-bottom: 15px;
+	max-width: 370px;
+	margin-left: 0px;
 
 }
 
+
+.tercero div p{
+	padding-right: 5px;
+	padding-bottom: 10px;
+}
+
+
+article div a img{ /* imagenes de galeria */
+	width: 190px;
+	height: 150px;
+	display: inline-flex;
+	margin-left: 20px;
+	/*padding: 10px;*/
+	
+	align-content: space-around;
+	border-radius: 15px;
+
+    
+    	grid-template-columns: repeat(3, 1fr);
+
+
+}
+
+
+
+/*                                 A CERDA  DE                          */
+
+.albert{
+	display: flex;
+}
+
+.musica{
+
+	width: 230px;
+	height: 200px;
+	border-radius: 10px;
+	margin-right: 10px;
+
+}
+
+.efecto-musica{
+	width: 170px;
+	height: 210px;
+	float: left;
+	shape-outside: circle(120%);
+
+}
+
+
+.autor{
+	width: 150px;
+	height: 180px;
+	padding-left: 10px;
+	margin-right: 10px;
+}
+
+
+.biografia{
+	width: 330px;
+	margin-left: 10px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	
+}
+
+ 
+div .espacio{
+	padding-bottom: 50px;
+}
+/*                             FIN A CERCA DE                         */
+
+
+
+
+.libro{
+
+	width: 140px;
+	height: 200px;
+	border-radius: 10px;
+	margin-right: 15px;
+
+}
+
+.efecto-libro{
+	width: 150px;
+	height: 210px;
+	float: left;
+	shape-outside: circle(90%);
+}
 
 
 
 
 footer {
-     position: fixed; /* Mantener el footer en la parte inferior */
-     bottom: 0; /* Posicionar en el pie de página */    
-     left: 0; /* Alinear a la izquierda */
-     right: 0; /* Alinear a la derecha */
-     padding: 10px; /* Ajustar el padding */
-     text-align: center; /* Centrar contenido */
-     background-color: #ffcdd8; /* Color de fondo */
+    
+     bottom: 0;    
+     left: 0; 
+     right: 0; 
+     padding: 10px; 
+     text-align: center; 
+     background-color: #ffcdd8; 
 }
 
+footer div p{
+	margin-left: 20px;
+}
 .red {
-    width: 30px; /* Ajustar el tamaño de las imágenes de redes */
-    margin: 0 5px; /* Espacio entre las imágenes */
+    width: 30px; 
+    margin: 0 5px; 
 }
 
 
