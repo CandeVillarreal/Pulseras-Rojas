@@ -28,7 +28,6 @@ a{
 	color: black;
 }
 
-
 header{
 	display: flex;
 	justify-content: space-between;
@@ -111,7 +110,8 @@ nav a{
 
 
 
-/*                      CLASES PARA LOS ARTICLE                        */
+
+/*                       CLASES PARA LOS ARTICLE                        */
 .principal{ 
 
 	margin-bottom: 10%;
@@ -138,7 +138,7 @@ nav a{
 
  /*                   FIN DE CLASES PARA LOS ARTICLE                     */
 
-
+/*                      FIN DE CLASES PARA LOS ARTICLE                  */
 
 .icon{ display: none;} /*para ocultar el menu hamburguesa*/
 
@@ -155,7 +155,11 @@ footer{
 	border-radius: 15%;
 	border-bottom-left-radius: 0% ;
 	border-bottom-right-radius: 0%;
-	padding-left: 315px;
+	padding-left: 350px;
+}
+
+footer div p{
+	margin-left: -55px;
 }
 
 .red{
@@ -226,17 +230,26 @@ article{
 
 
 .autor{
-	width: 150px;
+	width: 190px;
+	height: 180px;
 	padding-left: 10px;
+	margin-right: 30px;
+	border-radius: 10px;
 }
 
 
 .biografia{
-	width: 320px;
-	margin-left: 120px;
+	width: 150px;
+	height: 160px;
 	border-radius: 10px;
 	margin-bottom: 15px;
+	margin-right: 75px;
 	
+}
+
+
+.biografia-filas{
+	display: flex;
 }
 
 /*                               FIN IMAGENES A CERCA DE                */
@@ -277,7 +290,12 @@ article{
 }
 
 
-article div a img{ /* imagenes de galeria */
+
+
+
+/* imagenes de galeria */
+
+article div a img{ 
 	width: 220px;
 	height: 150px;
 	display: inline-flex;
@@ -290,22 +308,28 @@ article div a img{ /* imagenes de galeria */
     
     	grid-template-columns: repeat(3, 1fr);
 
-
 }
+
+
 
 /*                                 CONTATO                             */
 
 .form{
-	width:100%;
+	width:400px;
 	height:440px;
-	background:#ffcdd8;
+	background:#fce4ec;
 	border-radius:8px;
-	box-shadow:0 0 40px -10px #000;
+
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+
+	/*box-shadow:0 0 30px -10px #000;*/
 	margin:calc(1vh) auto;
-	padding:10px 30px;
+	padding:0px 50px;
 	box-sizing:border-box;
 	font-family:'Montserrat',sans-serif;
 	font-size: 14px;
+
 
 	
 }
@@ -360,14 +384,32 @@ div.pie_contacto{
 	padding:16px 4px 16px 0;
 	border-radius:6px;
 	box-shadow:10px 10px 40px -14px #000;
-	margin-left: 220px;
+	margin-left: 150px;
 }
 
 div.pie_contacto span{
 	margin:0 5px 0 15px;
 }
 
-/*                                FIN CONTACTO                            */
+
+.img-contacto{
+	width: 210px;
+	margin-right: 10px;
+	height: 440px;
+	margin-top: 7px;
+	border-radius: 8px;
+	/*box-shadow:0 0 30px -10px #000;*/
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+
+}
+
+.contorno{
+	display: flex;
+}
+
+
+/*                               FIN CONTACTO                            */
 
 
 
@@ -472,8 +514,9 @@ nav.responsive ul li {
 	text-align: center;
 	padding: 0.5rem;
 }
+
 nav.responsive ul li a {
-	padding-right: 0;
+   padding-right: 0;
 }
 
 .encabezado{
@@ -513,9 +556,10 @@ article {
 
 /*                              FORMULARIO CONTACTO                         */
 .form {
-	width: 370px;
-        height: 500px; 
+	width: 220px;
+        height: 400px; 
         padding: 10px; 
+
 
 }
 
@@ -530,8 +574,19 @@ button {
 
 div.pie_contacto{
 
-	margin-left: 70px;
+	margin-left: 30px;
 }
+
+.img-contacto {
+        width: 150px; /* Ancho completo */
+        height: 400px /* Mantener proporciones */
+        
+    }
+
+.contorno{
+	padding-bottom: 40px;
+}
+
 
 
 
@@ -618,12 +673,12 @@ div.pie_contacto{
 }
 
 
-article div a img{ /* imagenes de galeria */
+article div a img{ /*para imagenes de galeria*/
 	width: 190px;
 	height: 150px;
 	display: inline-flex;
 	margin-left: 20px;
-	/*padding: 10px;*/
+	padding: 10px;*/
 	
 	align-content: space-around;
 	border-radius: 15px;
@@ -669,11 +724,16 @@ article div a img{ /* imagenes de galeria */
 
 
 .biografia{
-	width: 330px;
-	margin-left: 10px;
-	border-radius: 10px;
-	margin-bottom: 15px;
+	width: 240px;
+	height: 220px;
+	margin-left: 60px;
+	border-radius: 8px;
+	margin-bottom: 5px;
 	
+}
+
+.biografia-filas{
+	display: block;
 }
 
  
